@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LoginSeguro;
 using static System.Windows.Forms.DataFormats;
 
 namespace J1
@@ -50,7 +51,9 @@ namespace J1
 
         private void IniciarSeccion_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            Inicio inicio = new Inicio();
+            inicio.Show();
         }
 
         private void Descargar_Click(object sender, EventArgs e)
